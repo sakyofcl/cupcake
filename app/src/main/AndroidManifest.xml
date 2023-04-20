@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Sakeen"
         tools:targetApi="31">
         <activity
+            android:name=".CakeFrom"
+            android:exported="false" />
+        <activity
             android:name=".OrderListView"
             android:exported="false" />
         <activity
@@ -21,14 +24,22 @@
             android:name=".CakeListView"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".Login"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>
